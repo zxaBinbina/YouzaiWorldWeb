@@ -1,1 +1,1 @@
-# EQAD
+# YouzaiWorld sever
