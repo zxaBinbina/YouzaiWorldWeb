@@ -12,7 +12,224 @@
     <!-- Styles -->
     <link href="../static/css/bootstrap.css" rel="stylesheet">
     <link href="../static/css/styles.css" rel="stylesheet">
+    <style>
+        .article-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
 
+        .article-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .article-title {
+            color: #2c3e50;
+            font-weight: 700;
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+        }
+
+        .article-meta {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .author-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 15px;
+            object-fit: cover;
+            border: 3px solid #27ae60;
+        }
+
+        .author-info {
+            text-align: left;
+        }
+
+        .author-name {
+            font-weight: 600;
+            color: #27ae60;
+            margin-bottom: 5px;
+        }
+
+        .article-date {
+            color: #7f8c8d;
+            font-size: 0.95rem;
+        }
+
+        .article-tag {
+            display: inline-block;
+            background: #eafaf1;
+            color: #27ae60;
+            padding: 6px 15px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .article-content {
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            line-height: 1.8;
+            color: #444;
+            font-size: 1.1rem;
+        }
+
+        .article-content h2 {
+            color: #27ae60;
+            margin: 30px 0 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #eafaf1;
+        }
+
+        .article-content h3 {
+            color: #2c3e50;
+            margin: 25px 0 15px;
+        }
+
+        .article-content p {
+            margin-bottom: 20px;
+        }
+
+        .article-content img {
+            max-width: 100%;
+            border-radius: 12px;
+            margin: 25px 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            display: block;
+        }
+
+        .article-content .highlight {
+            background: #f8f9fa;
+            border-left: 4px solid #27ae60;
+            padding: 15px 20px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .article-cta {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            background: linear-gradient(90deg, #27ae60, #2ecc71);
+            color: white;
+            padding: 12px 35px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .cta-btn:hover {
+            background: linear-gradient(90deg, #219653, #27ae60);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(39, 174, 96, 0.3);
+        }
+
+        .article-footer {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+
+        .article-nav {
+            color: #27ae60;
+            text-decoration: none;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+        }
+
+        .article-nav.prev {
+            margin-right: auto;
+        }
+
+        .article-nav.next {
+            margin-left: auto;
+        }
+
+        .article-nav i {
+            margin: 0 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .article-nav:hover i {
+            transform: translateX(-5px);
+        }
+
+        .article-nav.next:hover i {
+            transform: translateX(5px);
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .article-container {
+                padding: 30px 15px;
+            }
+
+            .article-title {
+                font-size: 2rem;
+            }
+
+            .article-content {
+                padding: 30px;
+            }
+
+            .article-content h2 {
+                font-size: 1.6rem;
+            }
+
+            .article-content h3 {
+                font-size: 1.3rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .article-title {
+                font-size: 1.8rem;
+            }
+
+            .article-content {
+                padding: 25px 20px;
+                font-size: 1rem;
+            }
+
+            .article-meta {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .author-avatar {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+
+            .author-info {
+                text-align: center;
+            }
+
+            .article-footer {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    </style>
     <!-- Favicon  -->
     <link rel="icon" href="../static/image/logo_circle.png">
     <script async="" src='../static/js/invisible.js'></script>
@@ -35,10 +252,12 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
         <!-- Image Logo -->
-        <a class="navbar-brand logo-image" href="../index.html"><img src="../static/image/youzaiworld.png" alt="alternative"></a>
-        
+        <a class="navbar-brand logo-image" href="../index.html"><img src="../static/image/youzaiworld.png"
+                alt="alternative"></a>
+
         <!-- Mobile Menu Toggle Button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-awesome fas fa-bars"></span>
             <span class="navbar-toggler-awesome fas fa-times"></span>
         </button>
@@ -50,22 +269,27 @@
                     <a class="nav-link page-scroll" href="../index.html">主页 <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="../index.html#list">服务器地址 <span class="sr-only">(current)</span></a>
+                    <a class="nav-link page-scroll" href="../index.html#list">服务器地址 <span
+                            class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="../activities.html">活动列表 <span class="sr-only">(current)</span></a>
+                    <a class="nav-link page-scroll" href="../activities.html">活动列表 <span
+                            class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="../server.html">游玩指南 <span class="sr-only">(current)</span></a>
+                    <a class="nav-link page-scroll" href="../server.html">游玩指南 <span
+                            class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="../wiki.pdf">教程文档 <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="../banlist.html">封神榜 <span class="sr-only">(current)</span></a>
+                    <a class="nav-link page-scroll" href="../banlist.html">封神榜 <span
+                            class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="https://qm.qq.com/q/wRwTn70lAA">加入服务器QQ群 <span class="sr-only">(current)</span></a>
+                    <a class="nav-link page-scroll" href="https://qm.qq.com/q/wRwTn70lAA">加入服务器QQ群 <span
+                            class="sr-only">(current)</span></a>
                 </li>
             </ul>
         </div>
@@ -78,7 +302,6 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1>快来领取进服奖励</h1>
-                    <h5>20250719</h5>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -91,16 +314,107 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="breadcrumbs">
-                        <a href="../index.html">主页</a><span>&nbsp;&nbsp;>&nbsp;&nbsp;<a href="../activities.html">活动列表</a>&nbsp;&nbsp;>&nbsp;&nbsp;快来领取进服奖励</div></span>
-                    </div> <!-- end of breadcrumbs -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
+                        <a href="../index.html">主页</a><span>&nbsp;&nbsp;>&nbsp;&nbsp;<a
+                                href="../activities.html">活动列表</a>&nbsp;&nbsp;>&nbsp;&nbsp;快来领取进服奖励 - a彬彬a
+                    </div></span>
+                </div> <!-- end of breadcrumbs -->
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
     </div> <!-- end of ex-basic-1 -->
     <!-- end of breadcrumbs -->
 
 
-【内容】
+    <!-- 文章内容开始 -->
+    <div class="article-container">
+        <div class="article-header">
+            <div class="article-meta">
+                <!--作者头像、名称、编辑日期-->
+                <img src="../static/picture/team/zxaBinbina.jpg" alt="作者头像" class="author-avatar">
+                <div class="author-info">
+                    <div class="author-name">a彬彬a</div>
+                    <div class="article-date">编辑日期：2025年7月19日</div>
+                </div>
+            </div>
+            <!--文章标签-->
+            <span class="article-tag">福利</span>
+        </div>
+
+        <div class="article-content">
+            <!--文章正文-->
+            <p>亲爱的玩家们，欢迎来到悠哉世界！为了感谢新玩家的加入，我们特别推出了"进服即领冒险礼包"活动。无论你是 Minecraft 老手还是萌新，只要加入我们的服务器，就能领取这份专属福利！</p>
+
+            <h2>🎁 礼包内容介绍</h2>
+
+            <p>本次新玩家福利礼包含有以下珍贵物品：</p>
+
+            <div class="highlight">
+                <p>1. 木制工具套装（木剑+木镐+木斧+木铲） × 1</p>
+                <p>2. 盾牌 × 1</p>
+                <p>3. 橡树原木 × 42</p>
+                <p>4. 面包 × 32</p>
+                <p>5. 附魔之瓶 × 6</p>
+                <p>6. 收纳袋 × 1</p>
+                <p>7. 空地图 × 1</p>
+                <p>8. 皮革套装（帽子+上衣+裤子+鞋子） × 1</p>
+                <p>9. 悠哉世界旗帜 × 1</p>
+                <p>10. 火把 × 2</p>
+                <p>11. 金币 × 300</p>
+                <p>12. 打开木棍菜单（对准非特殊方块右键使用） × 64</p>
+            </div>
+
+            <h2>📝 领取方式</h2>
+
+            <p>领取礼包非常简单，只需完成以下三个步骤：</p>
+
+            <h3>第一步：加入服务器</h3>
+            <p>使用国际基岩版进入服务器：</p>
+            <p id="poem-author" class="codeaddr">
+            地址：mc.youzaiworld.top<br>
+            端口：19902
+            </p>
+            <h3>第二步：完成新手基本教程</h3>
+            <p>首次进入服务器后，需先了解服务器基本教程</p>
+
+            <h3>第三步：领取</h3>
+            <p>打开菜单，点击双码兑换系统，选择CDK，输入代码并点击兑换，即可领取！</p>
+            <p>系统将自动发放礼包到你的背包！你需要确认你的背包未满哦~</p>
+
+            <img src="../static/image/articles/20250719_1_1.png" alt="礼包展示">
+
+            <p>领取成功截图</p>
+            
+            <h2>⏰ 活动时间</h2>
+
+            <p>本活动长期有效，没有截止日期！无论何时加入服务器，都能领取这份新手礼包。</p>
+
+            <h2>📜 注意事项</h2>
+
+            <p>
+                1. 每个游戏账号仅限领取一次<br>
+                2. 领取前请确保背包有足够空间<br>
+                3. 如遇到领取问题，请联系在线管理员</p>
+
+            <div class="highlight">
+                <p>温馨提示：加入我们的QQ群可以获取更多游戏攻略和活动通知，和沙雕群友吹逼，还能与管理员进行反馈！</p>
+            </div>
+        </div>
+
+        <div class="article-cta">
+            <a href="https://qm.qq.com/q/wRwTn70lAA" class="cta-btn">立即加入QQ群</a>
+        </div>
+        <!--
+        <div class="article-footer">
+            <a href="#" class="article-nav prev">
+                <i class="fas fa-arrow-left"></i> 上一活动：末地寻宝挑战
+            </a>
+            <a href="#" class="article-nav next">
+                下一活动：夏日建筑大赛 <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+        -->
+    </div>
+    <!-- 文章内容结束 -->
 
 
 
@@ -109,31 +423,76 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <p style="color:#f4f9ff;margin-bottom:0rem"> <a style="font-size: 0.9em;">友情外链</a><br><a target="_blank" href="https://eqad.fun">马国乐土</a>&nbsp;·&nbsp;<a target="_blank" href="https://raku404.com/">羽梦千景</a></p>
-                    <p><a target="_blank" href="https://github.com/zxaBinbina">Copyright 2025© zxaBinbina</a><br>网站框架由<a target="_blank" href="https://github.com/Equestriarcadia"> EQAD Network </a>友情提供</p>
+                    <p style="color:#f4f9ff;margin-bottom:0rem"> <a style="font-size: 0.9em;">友情外链</a><br><a
+                            target="_blank" href="https://eqad.fun">马国乐土</a>&nbsp;·&nbsp;<a target="_blank"
+                            href="https://raku404.com/">羽梦千景</a></p>
+                    <p><a target="_blank" href="https://github.com/zxaBinbina">Copyright 2025© zxaBinbina</a><br>网站框架由<a
+                            target="_blank" href="https://github.com/Equestriarcadia"> EQAD Network </a>友情提供</p>
                     <p><span id="js-rotating">
-                        红温了, 
-                        最新消息：科学家发现，吃饭可以缓解饥饿, 
-                        原神，____, 
-                        芙芙最可爱,
-                        笨蛋, 
-                        114514,
-                        Can't keep up!
-                    </span></p>
+                            红温了,
+                            最新消息：科学家发现，吃饭可以缓解饥饿,
+                            原神，____,
+                            芙芙最可爱,
+                            笨蛋,
+                            114514,
+                            Can't keep up!
+                        </span></p>
                 </div> <!-- end of col -->
             </div> <!-- enf of row -->
         </div> <!-- end of container -->
-    </div> <!-- end of copyright --> 
+    </div> <!-- end of copyright -->
     <!-- end of copyright -->
 
     <!-- Scripts -->
     <script src="../static/js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
     <script src="../static/js/bootstrap.min.js"></script>
-    <script src="../static/js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="../static/js/jquery.easing.min.js"></script>
+    <!-- jQuery Easing for smooth scrolling between anchors -->
     <script src="../static/js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
     <script src="../static/js/jquery.magnific-popup.min.js"></script> <!-- Magnific Popup for lightboxes -->
     <script src="../static/js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
     <script src="../static/js/scripts.js"></script> <!-- Custom scripts -->
+    <!-- Font Awesome 图标库 -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <script>
+        // 页面加载完成后执行
+        document.addEventListener('DOMContentLoaded', function () {
+            // 面包屑导航高亮当前页面
+            const currentPage = window.location.pathname.split('/').pop();
+            document.querySelectorAll('.nav-link').forEach(link => {
+                if (link.getAttribute('href') === currentPage) {
+                    link.classList.add('active');
+                }
+            });
+
+            // 文章内容中的代码块样式
+            document.querySelectorAll('.article-content code').forEach(code => {
+                code.style.background = '#f8f9fa';
+                code.style.padding = '2px 6px';
+                code.style.borderRadius = '4px';
+                code.style.fontFamily = 'monospace';
+            });
+
+            // 导航按钮悬停效果
+            const navButtons = document.querySelectorAll('.article-nav');
+            navButtons.forEach(button => {
+                button.addEventListener('mouseenter', function () {
+                    const icon = this.querySelector('i');
+                    if (this.classList.contains('prev')) {
+                        icon.style.transform = 'translateX(-5px)';
+                    } else {
+                        icon.style.transform = 'translateX(5px)';
+                    }
+                });
+
+                button.addEventListener('mouseleave', function () {
+                    const icon = this.querySelector('i');
+                    icon.style.transform = '';
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
