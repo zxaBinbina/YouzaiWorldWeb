@@ -1,0 +1,124 @@
+/* activities.css - 悠哉世界活动板块样式 */
+#activities {
+    padding: 100px 0;
+    background: #ffffff;
+    position: relative;
+    overflow: hidden;
+}
+
+.activities-container {
+    position: relative;
+    z-index: 2;
+}
+
+.activity-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s ease;
+    height: 100%;
+    margin-bottom: 30px;
+    transform: translateY(0);
+}
+
+.activity-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.activity-image {
+    height: 220px;
+    overflow: hidden;
+    position: relative;
+}
+
+.activity-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.activity-card:hover .activity-image img {
+    transform: scale(1.1);
+}
+
+.activity-date {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(39, 174, 96, 0.9);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    z-index: 2;
+}
+
+.activity-content {
+    padding: 25px;
+}
+
+.activity-content h3 {
+    color: #27ae60;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.activity-content p {
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+.activity-tag {
+    display: inline-block;
+    background: rgba(39, 174, 96, 0.1);
+    color: #27ae60;
+    padding: 6px 15px;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.activity-decoration {
+    position: absolute;
+    z-index: 1;
+    opacity: 0.05;
+}
+
+.decoration-1 {
+    top: 10%;
+    left: 5%;
+    width: 150px;
+    animation: float 6s ease-in-out infinite;
+}
+
+.decoration-2 {
+    bottom: 15%;
+    right: 5%;
+    width: 120px;
+    animation: float 8s ease-in-out infinite;
+}
+
+.decoration-3 {
+    top: 40%;
+    left: 15%;
+    width: 80px;
+    animation: float 7s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(5deg); }
+    100% { transform: translateY(0) rotate(0deg); }
+}
+
+@media (max-width: 768px) {
+    .activity-image {
+        height: 180px;
+    }
+}
