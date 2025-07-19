@@ -16,7 +16,8 @@
         '         |__|\n' +
         '\n' +
         'EQAD_Web - By Leonsu_L & JessDaodao\n' +
-        '网站基于模板二次创作，已在GitHub开源：https://github.com/Equestriarcadia/EQAD_Web'
+        '网站基于模板二次创作，已在GitHub开源：https://github.com/Equestriarcadia/EQAD_Web\n'+
+		'二改：zxabinbina 感谢JessDaodao提供支持。'
 	);
 
 	/* Preloader */
