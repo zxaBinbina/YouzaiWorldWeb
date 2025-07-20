@@ -110,33 +110,24 @@
     <!-- 内容列表 -->
     <div class="activity-list-container">
         <div class="container">
+            <p><h5>功能列表</h5></p>
             <div class="activity-filter">
                 <div class="filter-options">
-                    <a href="functions/submission/tips.html" style="text-decoration: none;" class="filter-btn">服务器小提示投稿 <i class="fas fa-arrow-right"></i></a>
-                    <a href="functions/submission/feedback.html" style="text-decoration: none;" class="filter-btn">服务器反馈投稿 <i class="fas fa-arrow-right"></i></a>
-                    <a href="functions/submission/articles.html" style="text-decoration: none;" class="filter-btn">玩家平台文章投稿 <i class="fas fa-arrow-right"></i></a>
+                    <a href="functions/submission/tips.html" style="text-decoration: none;" class="filter-btn">服务器小提示投稿
+                        <i class="fas fa-arrow-right"></i></a>
+                    <a href="functions/submission/feedback.html" style="text-decoration: none;"
+                        class="filter-btn">服务器反馈投稿 <i class="fas fa-arrow-right"></i></a>
+                    <a href="functions/submission/articles.html" style="text-decoration: none;"
+                        class="filter-btn">玩家平台文章投稿 <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
             <p><span style="color: rgb(196, 0, 0);">◉</span> 玩家平台正在开发，目前该页面所有内容均为示例数据！</p>
-            <!-- 内容筛选 -->
-            <div class="activity-filter">
-                <div class="filter-title">
-                    <i class="fas fa-filter"></i> 内容筛选
-                </div>
-                <div class="filter-options">
-                    <button class="filter-btn active" data-filter="all">全部</button>
-                    <button class="filter-btn" data-filter="ongoing">进行中</button>
-                    <button class="filter-btn" data-filter="upcoming">即将开始</button>
-                    <button class="filter-btn" data-filter="ended">已结束</button>
-                    <button class="filter-btn" data-filter="building">建筑类</button>
-                    <button class="filter-btn" data-filter="adventure">冒险类</button>
-                </div>
-            </div>
 
-            <!-- 活动列表 -->
+            <!-- 文章列表 -->
             <div class="activity-list">
-                <!-- 活动1 - 进行中 & 建筑类 -->
-                <div class="activity-card" data-status="ongoing" data-type="building">
+                <!-- 活动1 - 进行中-->
+                <!--
+                <div class="activity-card">
                     <div class="activity-badge ongoing">进行中</div>
                     <div class="activity-image">
                         <img src="https://images.unsplash.com/photo-1560969184-10fe8719e047?q=80&w=2670" alt="夏日建筑大赛">
@@ -156,9 +147,10 @@
                         <a href="#" class="activity-btn">查看详情 <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
-
-                <!-- 活动2 - 即将开始 & 冒险类 -->
-                <div class="activity-card" data-status="upcoming" data-type="adventure">
+            -->
+                <!-- 活动2 - 即将开始-->
+                <!--
+                <div class="activity-card">
                     <div class="activity-badge upcoming">即将开始</div>
                     <div class="activity-image">
                         <img src="https://images.unsplash.com/photo-1485795959911-ea5ebf41b6ae?q=80&w=2660"
@@ -178,9 +170,10 @@
                         <a href="#" class="activity-btn">立即报名 <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
-
-                <!-- 活动3 - 已结束 & 红石类 -->
-                <div class="activity-card" data-status="ended" data-type="redstone">
+            -->
+                <!-- 活动3 - 已结束-->
+                <!--
+                <div class="activity-card">
                     <div class="activity-badge ended">已结束</div>
                     <div class="activity-image">
                         <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2670" alt="红石机器设计赛">
@@ -199,66 +192,14 @@
                         <a href="#" class="activity-btn">查看结果 <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
-
-                <!-- 活动4 - 进行中 & 社区类 -->
-                <div class="activity-card" data-status="ongoing" data-type="community">
-                    <div class="activity-badge ongoing">进行中</div>
-                    <div class="activity-image">
-                        <img src="https://images.unsplash.com/photo-1542751110-97427bbecf20?q=80&w=1920" alt="社区建筑计划">
-                    </div>
-                    <div class="activity-content">
-                        <div class="activity-meta">
-                            <span class="activity-type">社区建设</span>
-                            <span class="activity-date"><i class="far fa-calendar-alt"></i> 7月15日 - 8月30日</span>
-                        </div>
-                        <h3 class="activity-title">社区建筑计划</h3>
-                        <p class="activity-desc">参与建设悠哉世界社区中心！每位玩家都可以贡献自己的建筑才能，共同打造一个属于大家的聚会场所。贡献度最高的玩家将获得社区建筑师称号。</p>
-                        <div class="activity-stats">
-                            <span class="stat-item"><i class="fas fa-users"></i> 已参与: 65人</span>
-                            <span class="stat-item"><i class="fas fa-trophy"></i> 奖励: 建筑师称号 + 稀有材料包</span>
-                        </div>
-                        <a href="#" class="activity-btn">参与建设 <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-
-                <!-- 活动5 - 即将开始 & 建筑类 -->
-                <div class="activity-card" data-status="upcoming" data-type="building">
-                    <div class="activity-badge upcoming">即将开始</div>
-                    <div class="activity-image">
-                        <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=2670"
-                            alt="现代建筑挑战">
-                    </div>
-                    <div class="activity-content">
-                        <div class="activity-meta">
-                            <span class="activity-type">建筑创作</span>
-                            <span class="activity-date"><i class="far fa-calendar-alt"></i> 8月15日 - 9月5日</span>
-                        </div>
-                        <h3 class="activity-title">现代建筑挑战</h3>
-                        <p class="activity-desc">挑战现代建筑风格！设计并建造一个具有现代感的建筑作品。可以是摩天大楼、艺术馆或未来住宅。评审将根据创新性、设计感和细节评分。</p>
-                        <div class="activity-stats">
-                            <span class="stat-item"><i class="fas fa-users"></i> 已报名: 18人</span>
-                            <span class="stat-item"><i class="fas fa-trophy"></i> 奖励: 建筑大师称号 + 钻石块</span>
-                        </div>
-                        <a href="#" class="activity-btn">查看详情 <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 无活动提示（初始隐藏） -->
-            <div class="no-activities">
-                <i class="fas fa-calendar-times"></i>
-                <h3>暂无匹配的活动</h3>
-                <p>当前筛选条件下没有找到活动，请尝试其他筛选条件或稍后再来查看。</p>
-                <button class="activity-btn" id="reset-filter">重置筛选条件</button>
+                -->
             </div>
 
             <!-- 分页 -->
             <div class="activity-pagination">
                 <a href="#" class="page-btn disabled"><i class="fas fa-chevron-left"></i></a>
-                <a href="#" class="page-btn active">1</a>
-                <a href="#" class="page-btn">2</a>
-                <a href="#" class="page-btn">3</a>
-                <a href="#" class="page-btn"><i class="fas fa-chevron-right"></i></a>
+                <a href="openplatform.html" class="page-btn active">1</a>
+                <a href="openplatform2.html" class="page-btn disabled"><i class="fas fa-chevron-right"></i></a>
             </div>
         </div>
     </div>
