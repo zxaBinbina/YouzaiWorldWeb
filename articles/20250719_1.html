@@ -239,9 +239,9 @@
 
     <!-- Preloader -->
     <div class="loader">
-      <div class="loader-container">
-        <img class="loader-image" src="../static/image/loading.png">
-      </div>
+        <div class="loader-container">
+            <img class="loader-image" src="../static/image/loading.png">
+        </div>
     </div>
     <!-- end of preloader -->
 
@@ -281,7 +281,8 @@
                     <a class="nav-link page-scroll" href="../wiki.pdf">教程文档 <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="banlist.html">玩家平台 <span class="sr-only">(current)</span></a>
+                    <a class="nav-link page-scroll" href="../openplatform.html">玩家平台 <span
+                            class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="../banlist.html">封神榜 <span
@@ -370,8 +371,8 @@
             <h3>第一步：加入服务器</h3>
             <p>使用国际基岩版进入服务器：</p>
             <p id="poem-author" class="codeaddr">
-            地址：mc.youzaiworld.top<br>
-            端口：19902
+                地址：mc.youzaiworld.top<br>
+                端口：19902
             </p>
             <h3>第二步：完成新手基本教程</h3>
             <p>首次进入服务器后，需先了解服务器基本教程</p>
@@ -383,7 +384,7 @@
             <img src="../static/image/articles/20250719_1_1.png" alt="礼包展示">
 
             <p>领取成功截图</p>
-            
+
             <h2>⏰ 活动时间</h2>
 
             <p>本活动长期有效，没有截止日期！无论何时加入服务器，都能领取这份新手礼包。</p>
@@ -398,21 +399,10 @@
             <div class="highlight">
                 <p>温馨提示：加入我们的QQ群可以获取更多游戏攻略和活动通知，和沙雕群友吹逼，还能与管理员进行反馈！</p>
             </div>
+            <div class="article-cta">
+                <a href="https://qm.qq.com/q/wRwTn70lAA" class="cta-btn">立即加入QQ群</a>
+            </div>
         </div>
-
-        <div class="article-cta">
-            <a href="https://qm.qq.com/q/wRwTn70lAA" class="cta-btn">立即加入QQ群</a>
-        </div>
-        <!--
-        <div class="article-footer">
-            <a href="#" class="article-nav prev">
-                <i class="fas fa-arrow-left"></i> 上一活动：末地寻宝挑战
-            </a>
-            <a href="#" class="article-nav next">
-                下一活动：夏日建筑大赛 <i class="fas fa-arrow-right"></i>
-            </a>
-        </div>
-        -->
     </div>
     <!-- 文章内容结束 -->
 
@@ -445,45 +435,5 @@
     <script src="../static/js/scripts.js"></script> <!-- Custom scripts -->
     <!-- Font Awesome 图标库 -->
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
-    <script>
-        // 页面加载完成后执行
-        document.addEventListener('DOMContentLoaded', function () {
-            // 面包屑导航高亮当前页面
-            const currentPage = window.location.pathname.split('/').pop();
-            document.querySelectorAll('.nav-link').forEach(link => {
-                if (link.getAttribute('href') === currentPage) {
-                    link.classList.add('active');
-                }
-            });
-
-            // 文章内容中的代码块样式
-            document.querySelectorAll('.article-content code').forEach(code => {
-                code.style.background = '#f8f9fa';
-                code.style.padding = '2px 6px';
-                code.style.borderRadius = '4px';
-                code.style.fontFamily = 'monospace';
-            });
-
-            // 导航按钮悬停效果
-            const navButtons = document.querySelectorAll('.article-nav');
-            navButtons.forEach(button => {
-                button.addEventListener('mouseenter', function () {
-                    const icon = this.querySelector('i');
-                    if (this.classList.contains('prev')) {
-                        icon.style.transform = 'translateX(-5px)';
-                    } else {
-                        icon.style.transform = 'translateX(5px)';
-                    }
-                });
-
-                button.addEventListener('mouseleave', function () {
-                    const icon = this.querySelector('i');
-                    icon.style.transform = '';
-                });
-            });
-        });
-    </script>
 </body>
-
 </html>
