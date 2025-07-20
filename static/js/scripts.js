@@ -21,15 +21,25 @@
 	);
 
 	/* Preloader */
-	$(window).on('load', function() {
-		var preloaderFadeOutTime = 500;
-		function hidePreloader() {
-			var preloader = $('.spinner-wrapper');
-			setTimeout(function() {
-				preloader.fadeOut(preloaderFadeOutTime);
-			}, 500);
-		}
-		hidePreloader();
+	window.addEventListener('load', function() {
+ 	 const loader = document.querySelector('.loader');
+ 	 const loadStartTime = Date.now();
+	  const minimumLoadTime = 500;
+
+ 	 function hideLoader() {
+ 	   loader.classList.add('hidden');
+ 	   loader.addEventListener('transitionend', function() {
+  	    loader.style.display = 'none';
+ 	   }, { once: true });
+ 	 }
+
+ 	 const elapsedTime = Date.now() - loadStartTime;
+  
+ 	 if (elapsedTime >= minimumLoadTime) {
+ 	   hideLoader();
+ 	 } else {
+ 	   setTimeout(hideLoader, minimumLoadTime - elapsedTime);
+ 	 }
 	});
 
 	
@@ -58,20 +68,6 @@
     $(".navbar-nav li a").on("click", function(event) {
     if (!$(this).parent().hasClass('dropdown'))
         $(".navbar-collapse").collapse('hide');
-    });
-
-
-    /* Rotating Text - Morphtext */
-	$("#js-rotating").Morphext({
-		// The [in] animation type. Refer to Animate.css for a list of available animations.
-		animation: "fadeIn",
-		// An array of phrases to rotate are created based on this separator. Change it if you wish to separate the phrases differently (e.g. So Simple | Very Doge | Much Wow | Such Cool).
-		separator: ",",
-		// The delay between the changing of each phrase in milliseconds.
-		speed: 2000,
-		complete: function () {
-			// Called after the entrance animation is executed.
-		}
     });
     
 

@@ -48,7 +48,7 @@
     position: absolute;
     top: 15px;
     right: 15px;
-    background: rgba(39, 174, 96, 0.9);
+    background: rgba(39, 120, 174, 0.9);
     color: white;
     padding: 8px 20px;
     border-radius: 30px;
@@ -62,7 +62,7 @@
 }
 
 .activity-content h3 {
-    color: #27ae60;
+    color: #5cd9ff;
     margin-bottom: 15px;
     font-weight: 700;
 }
@@ -75,8 +75,8 @@
 
 .activity-tag {
     display: inline-block;
-    background: rgba(39, 174, 96, 0.1);
-    color: #27ae60;
+    background: rgba(73, 243, 255, 0.1);
+    color: #2746ae;
     padding: 6px 15px;
     border-radius: 30px;
     font-size: 0.85rem;
