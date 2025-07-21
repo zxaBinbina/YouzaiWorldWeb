@@ -801,7 +801,7 @@ input[type='checkbox'] {
 .navbar-custom .navbar-toggler {
 	border: none;
 	color: #fff;
-	background: url('../image/navbar-toggler.png');
+	background: url('../image/navbar-toggler.webp');
 	background-size: cover;
 }
 
@@ -827,7 +827,7 @@ input[type='checkbox'] {
 /*    04. Header     */
 /*********************/
 .header {
-	background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../image/bg.jpg') top center;
+	background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../image/bg.webp') top center;
 	background-size: cover;
 	position: relative;
 	height: 100vh;
@@ -1064,7 +1064,7 @@ input[type='checkbox'] {
 /*************************/
 .accordion .area-1 {
 	height: 27rem;
-	background: url('../image/ac5eHS.jpg') center center no-repeat;
+	background: url('../image/ac5eHS.webp') center center no-repeat;
 	background-size: cover;
 }
 
@@ -1254,13 +1254,13 @@ input[type='checkbox'] {
 
 .tabs .area-2 {
 	height: 27rem;
-	background: url('../image/ac5ZB8.jpg') center center no-repeat;
+	background: url('../image/ac5ZB8.webp') center center no-repeat;
 	background-size: cover;
 }
 
 .tabs .area-3 {
 	height: 27rem;
-	background: url('../image/ac5Z.jpg') center center no-repeat;
+	background: url('../image/ac5Z.webp') center center no-repeat;
 	background-size: cover;
 }
 
