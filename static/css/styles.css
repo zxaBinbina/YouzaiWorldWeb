@@ -827,13 +827,53 @@ input[type='checkbox'] {
 /*    04. Header     */
 /*********************/
 .header {
-	background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../image/bg.webp') top center;
-	background-size: cover;
-	position: relative;
-	height: 100vh;
-	width: 100%;
-	overflow-x: hidden;
-	overflow-y: hidden;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.288);
+    z-index: 1;
+}
+
+.header-slideshow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.header-slideshow .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+    background-color: #000;
+}
+
+.header-slideshow .slide.active {
+    opacity: 1;
+}
+
+.header-content {
+    position: relative;
+    z-index: 2;
 }
 
 @media (min-width: 1024px) {
@@ -2953,7 +2993,7 @@ a:hover.back-to-top {
     margin: 20px 15px;
     width: calc(100% - 30px);
 }
-/* 取消链接下划线 */
+
 .no-underline {
     text-decoration: none;
 }
