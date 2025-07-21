@@ -728,14 +728,15 @@ input[type='checkbox'] {
 
 .navbar-custom .nav-item .nav-link {
 	padding: 0.625rem 0.75rem 0.625rem 0.75rem;
-	color: #4a4a4a;
+	color: #e4e4e4;
+	text-shadow: #000;
 	text-decoration: none;
 	transition: all 0.2s ease;
 }
 
 .navbar-custom .nav-item .nav-link:hover,
 .navbar-custom .nav-item .nav-link.active {
-	color: #0a4e75;
+	color: #0f9aeb;
 }
 
 /* Dropdown Menu */
@@ -853,7 +854,7 @@ input[type='checkbox'] {
     align-items: center;
     flex-direction: column;
     text-align: center;
-	background-color: #e5e5e5b5;
+	background-color: #0000007c;
 }
 
 .header h1 {
@@ -1869,12 +1870,16 @@ a:hover.back-to-top {
 .ex-header {
 	padding-top: 6rem;
 	padding-bottom: 2rem;
-	background-color: #e5e5e5;
+	background-color: #353535;
 	text-align: center;
 }
 
 .ex-header h1 {
-	color: #3f3f3f;
+	color: #dbdbdb;
+}
+
+.ex-header h5 {
+	color: #dadada;
 }
 
 .ex-basic-1 {
@@ -1965,12 +1970,12 @@ a:hover.back-to-top {
 	
 	.navbar-custom .nav-item .nav-link:hover,
 	.navbar-custom .nav-item .nav-link.active {
-		color: #0678ba;
+		color: #0999ec;
 	}
 
 	.navbar-custom.top-nav-collapse {
         padding: 0.375rem 1.5rem 0.375rem 2rem;
-		background-color: #eeeeeeb2;
+		background-color: #111111b2;
 	}
 
 	.navbar-custom.top-nav-collapse .navbar-brand.logo-text {
@@ -1978,12 +1983,12 @@ a:hover.back-to-top {
 	}
 
 	.navbar-custom.top-nav-collapse .nav-item .nav-link {
-		color: #5c5c5c;
+		color: #e4e4e4;
 	}
 	
 	.navbar-custom.top-nav-collapse .nav-item .nav-link:hover,
 	.navbar-custom.top-nav-collapse .nav-item .nav-link.active {
-		color: #0678ba;
+		color: #0999ec;
 	}
 
 	.navbar-custom .dropdown-menu {
