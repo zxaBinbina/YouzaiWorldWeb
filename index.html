@@ -14,6 +14,45 @@
     <link href="static/css/magnific-popup.css" rel="stylesheet">
     <link href="static/css/styles.css" rel="stylesheet">
     <link href="static/css/activities.css" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/swiper.min.css">
+    <link rel="stylesheet" href="static/css/swiper-bundle.min.css">
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #ffffff00;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
 
     <!-- Favicon  -->
     <link rel="icon" href="static/image/logo_circle.webp">
@@ -137,7 +176,7 @@
         </div>
     </div>
 
-    
+
 
     <!-- Intro -->
     <div id="info" class="basic-2">
@@ -236,235 +275,252 @@
                     <h2>- 服务器细节 -</h2>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-12">
-
-                    <div class="card">
-                        <!--
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <!--
                         <div class="card-image">
                             <img title="市场" class="img-fluid" src="static/picture/友善.webp" alt="alternative">
                         </div>
                         -->
-                        <div class="card-body">
-                            <h3 class="card-title">市场</h3>
-                            <p>
-                                在市场和其他玩家用经济交易物品吧<br>
-                                您可以在官方商店回收矿物来获取经济
-                            </p>
+                            <div class="card-body">
+                                <h3 class="card-title">市场</h3>
+                                <p>
+                                    在市场和其他玩家用经济交易物品吧<br>
+                                    您可以在官方商店回收矿物来获取经济
+                                </p>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="card">
-                        <!--
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <!--
                         <div class="card-image">
                             <img title="pvp" class="img-fluid" src="static/picture/友善.webp" alt="alternative">
                         </div>
                         -->
-                        <div class="card-body">
-                            <h3 class="card-title">决斗</h3>
-                            <p>
-                                玩家们可以在指定区域内发起决斗并设置赌注<br>
-                                决斗胜利后可以获得赌注的金币
-                            </p>
+                            <div class="card-body">
+                                <h3 class="card-title">决斗</h3>
+                                <p>
+                                    玩家们可以在指定区域内发起决斗并设置赌注<br>
+                                    决斗胜利后可以获得赌注的金币
+                                </p>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="card">
-                        <!--
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <!--
                         <div class="card-image">
                             <img title="经济系统" class="img-fluid" src="static/picture/友善.webp" alt="alternative">
                         </div>
                         -->
-                        <div class="card-body">
-                            <h3 class="card-title">经济体系</h3>
-                            <p>
-                                转账、发红包、交易和兑换权益<br>
-                                在服务器主要的系统
-                            </p>
+                            <div class="card-body">
+                                <h3 class="card-title">经济体系</h3>
+                                <p>
+                                    转账、发红包、交易和兑换权益<br>
+                                    在服务器主要的系统
+                                </p>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="card">
-                        <!--
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <!--
                         <div class="card-image">
                             <img title="light" class="img-fluid" src="static/picture/快速.webp" alt="alternative">
                         </div>
                         -->
-                        <div class="card-body">
-                            <h3 class="card-title">动态光源</h3>
-                            <p>
-                                手持火把等光源物品时<br>
-                                可以照亮周围的环境
-                            </p>
+                            <div class="card-body">
+                                <h3 class="card-title">动态光源</h3>
+                                <p>
+                                    手持火把等光源物品时<br>
+                                    可以照亮周围的环境
+                                </p>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="card">
-                        <!--
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <!--
                         <div class="card-image">
                             <img title="land" class="img-fluid" src="static/picture/友善.webp" alt="alternative">
                         </div>
                         -->
-                        <div class="card-body">
-                            <h3 class="card-title">领地</h3>
-                            <p>
-                                保护某个区域的建筑不被其他玩家破坏<br>
-                                多权限设置可修改
-                            </p>
+                            <div class="card-body">
+                                <h3 class="card-title">领地</h3>
+                                <p>
+                                    保护某个区域的建筑不被其他玩家破坏<br>
+                                    多权限设置可修改
+                                </p>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="card">
-                        <!--
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <!--
                         <div class="card-image">
                             <img title="cs" class="img-fluid" src="static/picture/友善.webp" alt="alternative">
                         </div>
                         -->
-                        <div class="card-body">
-                            <h3 class="card-title">集成传送</h3>
-                            <p>
-                                玩家互传、设置家与公共点和返回死亡点<br>
-                                让玩家可以更方便地在服务器内传送
-                            </p>
+                            <div class="card-body">
+                                <h3 class="card-title">集成传送</h3>
+                                <p>
+                                    玩家互传、设置家与公共点和返回死亡点<br>
+                                    让玩家可以更方便地在服务器内传送
+                                </p>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="card">
-                        <!--
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <!--
                         <div class="card-image">
                             <img title="org" class="img-fluid" src="static/picture/友善.webp" alt="alternative">
                         </div>
                         -->
-                        <div class="card-body">
-                            <h3 class="card-title">公会</h3>
-                            <p>
-                                加入公会<br>
-                                和其他玩家一起玩吧
-                            </p>
+                            <div class="card-body">
+                                <h3 class="card-title">公会</h3>
+                                <p>
+                                    加入公会<br>
+                                    和其他玩家一起玩吧
+                                </p>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="card">
-                        <!--
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <!--
                         <div class="card-image">
                             <img title="睡觉加速" class="img-fluid" src="static/picture/公益.webp" alt="alternative">
                         </div>
                         -->
-                        <div class="card-body">
-                            <h3 class="card-title">睡觉加速夜晚</h3>
-                            <p>
-                                服务器只要有一人睡觉<br>
-                                就会根据睡觉的人数加速跳过夜晚的时间
-                            </p>
+                            <div class="card-body">
+                                <h3 class="card-title">睡觉加速夜晚</h3>
+                                <p>
+                                    服务器只要有一人睡觉<br>
+                                    就会根据睡觉的人数加速跳过夜晚的时间
+                                </p>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="card">
-                        <!--
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <!--
                         <div class="card-image">
                             <img title="经验等级加成" class="img-fluid" src="static/picture/友善.webp" alt="alternative">
                         </div>
                         -->
-                        <div class="card-body">
-                            <h3 class="card-title">经验等级加成</h3>
-                            <p>
-                                让玩家每升10级获得额外血量加成<br>
-                                等级降低后失去对应额外血量加成
-                            </p>
+                            <div class="card-body">
+                                <h3 class="card-title">经验等级加成</h3>
+                                <p>
+                                    让玩家每升10级获得额外血量加成<br>
+                                    等级降低后失去对应额外血量加成
+                                </p>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="card">
-                        <!--
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <!--
                         <div class="card-image">
                             <img title="统计" class="img-fluid" src="static/picture/友善.webp" alt="alternative">
                         </div>
                         -->
-                        <div class="card-body">
-                            <h3 class="card-title">统计</h3>
-                            <p>
-                                记住您在服务器内的经历<br>
-                                包括死亡次数、击杀数、在线时长等
-                            </p>
+                            <div class="card-body">
+                                <h3 class="card-title">统计</h3>
+                                <p>
+                                    记住您在服务器内的经历<br>
+                                    包括死亡次数、击杀数、在线时长等
+                                </p>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="card">
-                        <!--
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <!--
                         <div class="card-image">
                             <img title="死亡保留部分物品" class="img-fluid" src="static/picture/友善.webp" alt="alternative">
                         </div>
                         -->
-                        <div class="card-body">
-                            <h3 class="card-title">死亡掉落部分物品</h3>
-                            <p>
-                                死亡不会掉落全部物品<br>
-                                根据概率和比例掉落部分物品
-                            </p>
+                            <div class="card-body">
+                                <h3 class="card-title">死亡掉落部分物品</h3>
+                                <p>
+                                    死亡不会掉落全部物品<br>
+                                    根据概率和比例掉落部分物品
+                                </p>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="card">
-                        <!--
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <!--
                         <div class="card-image">
                             <img title="签到" class="img-fluid" src="static/picture/友善.webp" alt="alternative">
                         </div>
                         -->
-                        <div class="card-body">
-                            <h3 class="card-title">签到</h3>
-                            <p>
-                                按照周为单位的递增<br>
-                                可以补签
-                            </p>
+                            <div class="card-body">
+                                <h3 class="card-title">签到</h3>
+                                <p>
+                                    按照周为单位的递增<br>
+                                    可以补签
+                                </p>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="card">
-                        <!--
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <!--
                         <div class="card-image">
                             <img title="je" class="img-fluid" src="static/picture/友善.webp" alt="alternative">
                         </div>
                         -->
-                        <div class="card-body">
-                            <h3 class="card-title">仍然饥饿</h3>
-                            <p>
-                                一些玩家非常不爱惜自己的身体,通过自杀来获取饱食度,这并不好<br>
-                                玩家复活后恢复其饥饿数值到复活前的状态
-                            </p>
+                            <div class="card-body">
+                                <h3 class="card-title">仍然饥饿</h3>
+                                <p>
+                                    一些玩家非常不爱惜自己的身体,通过自杀来获取饱食度,这并不好<br>
+                                    玩家复活后恢复其饥饿数值到复活前的状态
+                                </p>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="card">
-                        <!--
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <!--
                         <div class="card-image">
                             <img title="incode" class="img-fluid" src="static/picture/友善.webp" alt="alternative">
                         </div>
                         -->
-                        <div class="card-body">
-                            <h3 class="card-title">邀请码</h3>
-                            <p>
-                                邀请新玩家加入服务器<br>
-                                双方都可获得奖励
-                            </p>
+                            <div class="card-body">
+                                <h3 class="card-title">邀请码</h3>
+                                <p>
+                                    邀请新玩家加入服务器<br>
+                                    双方都可获得奖励
+                                </p>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="card">
-                        <!--
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <!--
                         <div class="card-image">
                             <img title="jb" class="img-fluid" src="static/picture/友善.webp" alt="alternative">
                         </div>
                         -->
-                        <div class="card-body">
-                            <h3 class="card-title">在线激励</h3>
-                            <p>
-                                每隔几分钟<br>
-                                您可以获得一定的金币奖励
-                            </p>
+                            <div class="card-body">
+                                <h3 class="card-title">在线激励</h3>
+                                <p>
+                                    每隔几分钟<br>
+                                    您可以获得一定的金币奖励
+                                </p>
+                            </div>
                         </div>
                     </div>
-
                 </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
     </div>
@@ -560,7 +616,8 @@
                 </div>
 
             </div>
-            <p><span style="color: rgb(42, 196, 0);">◉</span> 我们正在招揽人才，有意者请联系腐竹（QQ 447933979），捣蛋鬼请远离！<br>招募指令师和建筑师。</p>
+            <p><span style="color: rgb(42, 196, 0);">◉</span> 我们正在招揽人才，有意者请联系腐竹（QQ 447933979），捣蛋鬼请远离！<br>招募指令师和建筑师。
+            </p>
         </div>
     </div>
     <!-- end of team -->
@@ -681,8 +738,9 @@
                     <p style="color:#f4f9ff;margin-bottom:0rem"> <a style="font-size: 0.9em;">友情外链</a><br><a
                             target="_blank" href="https://eqad.fun">马国乐土</a>&nbsp;·&nbsp;<a target="_blank"
                             href="https://raku404.com/">羽梦千景</a></p>
-                    <p><a target="_blank" href="https://github.com/zxaBinbina">Copyright 2025© zxaBinbina</a><br>网站框架由<a
-                            target="_blank" href="https://github.com/Equestriarcadia"> EQAD Network </a>友情提供</p>
+                    <p><a target="_blank" href="https://github.com/zxaBinbina">Copyright 2025©
+                            zxaBinbina</a><br>网站框架由<a target="_blank" href="https://github.com/Equestriarcadia">
+                            EQAD Network </a>友情提供</p>
                 </div> <!-- end of col -->
             </div> <!-- enf of row -->
         </div> <!-- end of container -->
@@ -692,13 +750,52 @@
     <!-- Scripts -->
     <script src="static/js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
     <script src="static/js/bootstrap.min.js"></script>
-    <script src="static/js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="static/js/jquery.easing.min.js"></script>
+    <!-- jQuery Easing for smooth scrolling between anchors -->
     <script src="static/js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
     <script src="static/js/jquery.magnific-popup.min.js"></script> <!-- Magnific Popup for lightboxes -->
     <script src="static/js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
     <script src="static/js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
     <script src="static/js/mc-status.js"></script> <!-- MC status -->
     <script src="static/js/scripts.js"></script> <!-- Custom scripts -->
+    <script src="static/js/swiper.min.js"></script> <!-- Swiper custom scripts -->
+    <script src="static/js/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 4,
+            autoHeight: true,
+            loop: true,
+            centeredSlides: true,
+            grabCursor: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            slidesPerView: 1,
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 50,
+                },
+            },
+        });
+    </script>
 </body>
 
 </html>
