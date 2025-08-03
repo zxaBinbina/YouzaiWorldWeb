@@ -1,0 +1,73 @@
+/* 保留全局变量和动画 */
+@property --＠color-1 {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: hsl(98 100% 62%);
+}
+
+@property --＠color-2 {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: hsl(204 100% 59%);
+}
+
+@-webkit-keyframes gradient-change {
+    to {
+        --＠color-1: hsl(210 100% 59%);
+        --＠color-2: hsl(310 100% 59%);
+    }
+}
+
+@keyframes gradient-change {
+    to {
+        --＠color-1: hsl(210 100% 59%);
+        --＠color-2: hsl(310 100% 59%);
+    }
+}
+
+/* 核心渐变文本类 */
+.gradient-text {
+    -webkit-animation: gradient-change 2s linear infinite alternate;
+    animation: gradient-change 2s linear infinite alternate;
+    background: linear-gradient(to right in oklch, var(--＠color-1), var(--＠color-2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    display: grid;
+    gap: 1lh;
+    text-align: center;
+}
+
+/* 布局辅助类 */
+.page-container {
+    background: hsl(204 100% 5%);
+    min-block-size: 100vh;
+    box-sizing: border-box;
+    display: grid;
+    place-content: center;
+    padding: 5vmin;
+    margin: 0;
+    text-wrap: balance;
+}
+
+.full-height-page {
+    block-size: 100%;
+}
+
+/* 排版类 */
+.large-heading {
+    font-size: 10vmin;
+    line-height: 1.25cap;
+    margin: 0;
+}
+
+.mono-text {
+    font-family: "Dank Mono", ui-monospace, monospace;
+    margin: 0;
+}
+
+.system-ui {
+    font-family: system-ui, sans-serif;
+    font-size: min(200%, 4vmin);
+}
