@@ -13,12 +13,6 @@
     --card-border: rgba(148, 163, 184, 0.1);
 }
 
-body {
-    background: linear-gradient(to bottom, #000000, #0c0a1d);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: var(--text-light);
-}
-
 /* 自定义底页样式 */
 .modern-footer {
     background: linear-gradient(135deg, var(--dark-dark) 0%, var(--primary-dark) 100%);
