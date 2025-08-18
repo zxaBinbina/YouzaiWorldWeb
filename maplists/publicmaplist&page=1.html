@@ -7,34 +7,34 @@
     <meta name="referrer" content="no-referrer">
 
     <!-- Website Title -->
-    <title>玩家平台 - Youzai World</title>
+    <title>公开地图画列表 第一页 - Youzai World</title>
 
     <!-- Styles -->
-    <link href="static/css/bootstrap.css" rel="stylesheet">
-    <link href="static/css/styles.css" rel="stylesheet">
-    <link rel="stylesheet" href="static/css/activitieslist.css">
-    <link rel="stylesheet" href="static/css/click-effects.css">
-    <link rel="stylesheet" href="static/css/dl.css">
+    <link href="../static/css/bootstrap.css" rel="stylesheet">
+    <link href="../static/css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/activitieslist.css">
+    <link rel="stylesheet" href="../static/css/click-effects.css">
+    <link rel="stylesheet" href="../static/css/dl.css">
+    <link rel="stylesheet" href="../static/css/map.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
 
     <!-- Favicon  -->
-    <link rel="icon" href="static/image/logo_circle.webp">
-    <script async="" src='static/js/invisible.js'></script>
+    <link rel="icon" href="../static/image/logo_circle.webp">
+    <script async="" src='../static/js/invisible.js'></script>
 </head>
 
 <body data-spy="scroll" data-target=".fixed-top">
 
     <!-- Preloader -->
     <div class="loader">
-      <div class="loader-container">
-        <img class="loader-image" src="static/image/loading.webp">
-      </div>
+        <div class="loader-container">
+            <img class="loader-image" src="../static/image/loading.webp">
+        </div>
     </div>
     <!-- end of preloader -->
     <!-- Navbar -->
     <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
-        <a class="navbar-brand logo-image" href=""><img src="static/image/youzaiworld.webp" alt="YouzaiWorld_Logo"></a>
+        <a class="navbar-brand logo-image" href=""><img src="../static/image/youzaiworld.webp" alt="YouzaiWorld_Logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
             aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-awesome fas fa-bars"></span>
@@ -56,17 +56,17 @@
                     <a class="nav-link page-scroll" href="/#list">服务器地址 <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="activities">活动列表 <span class="sr-only">(current)</span></a>
+                    <a class="nav-link page-scroll" href="/activities.html">活动列表 <span class="sr-only">(current)</span></a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="wiki.pdf">教程文档 <span class="sr-only">(current)</span></a>
+                    <a class="nav-link page-scroll" href="/wiki.pdf">教程文档 <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#header">玩家平台 <span class="sr-only">(current)</span></a>
+                    <a class="nav-link page-scroll" href="/openplatform">玩家平台 <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="banlist">封神榜 <span class="sr-only">(current)</span></a>
+                    <a class="nav-link page-scroll" href="/banlist">封神榜 <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="https://qm.qq.com/q/wRwTn70lAA">加入服务器QQ群<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path><polyline points="15,3 21,3 21,9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg> <span
@@ -75,18 +75,21 @@
             </ul>
         </div>
     </nav>
+
+
     <!-- Header -->
     <header id="header" class="ex-header">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>玩家平台</h1>
-                    <h5>Players platform</h5>
+                    <h1>公开地图画列表 第一页</h1>
+                    <h5>Public map list Page 1</h5>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </header> <!-- end of ex-header -->
     <!-- end of header -->
+
 
     <!-- Breadcrumbs -->
     <div class="ex-basic-1">
@@ -94,59 +97,55 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="breadcrumbs">
-                        <a href="/">主页</a><span>&nbsp;&nbsp;>&nbsp;&nbsp;玩家平台</span>
+                        <a href="/">主页</a>&nbsp;&nbsp;>&nbsp;&nbsp;<a href="../maplists/publicmaplisthome">公开地图画列表</a><span>&nbsp;&nbsp;第一页</span>
                     </div> <!-- end of breadcrumbs -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of ex-basic-1 -->
     <!-- end of breadcrumbs -->
-
-    <!-- 内容列表 -->
-    <div class="activity-list-container">
+    <div class="col-lg-12">
+    <div class="map-list-container">
         <div class="container">
-            <p><h5>功能列表</h5></p>
-            <div class="activity-filter">
-                <div class="filter-options">
-                    <a href="functions/submission/tips" style="text-decoration: none;" class="filter-btn">服务器小提示投稿</a>
-                    <a href="functions/submission/feedback" style="text-decoration: none;"
-                        class="filter-btn">服务器反馈投稿</a>
-                    <a href="functions/submission/articles" style="text-decoration: none;"
-                        class="filter-btn">玩家平台文章投稿</a>
-                    <a href="functions/submission/appeal" style="text-decoration: none;"
-                        class="filter-btn">申诉</a>
-                    <a href="functions/submission/map" style="text-decoration: none;"
-                        class="filter-btn">服务器上传图片&生成地图画申请投稿</a>
-                </div>
-            </div>
-            <p><span style="color: rgb(196, 0, 0);">◉</span> 玩家平台正在开发，目前该页面所有内容均为示例数据！</p>
-
-            <!-- 文章列表 -->
-            <div class="activity-list">
-                <div class="activity-card">
-                    <div class="activity-image">
-                        <img src="static/image/pubilcmaplist/titleimg.webp" alt="公开地图画列表">
+            <h3>2025年6月</h3>
+            <hr class="b-border">
+            <!-- 地图画网格 -->
+            <div class="map-grid">
+                <!-- 地图画卡片 1 -->
+                <div class="map-card">
+                    <div class="map-image-container">
+                        <img src="../static/image/pubilcmaplist/page=1/fu.webp" alt="春日樱花" class="map-image" height="1024" width="1024" loading="lazy">
+                        <div class="activity-badge ongoing">官方</div>
                     </div>
-                    <div class="activity-content">
-                        <h3 class="activity-title">公开地图画列表</h3>
-                        <p class="activity-desc">把图片在游戏内的相框展示出来吧！</p>
-                        <div class="activity-stats">
-                            <span class="stat-item"><i class="fas fa-users"></i> 已收录 <strong>0</strong> 张玩家地图画</span>
-                            <span class="stat-item"><i class="fas fa-user-friends"></i> 已收录 <strong>1</strong> 张官方地图画</span>
+                    <div class="map-content">
+                        <p class="map-title"><h4>芙宁娜</h4>Furina</p>
+                        <div class="map-date">1024<strong> px × </strong>1024<strong> px</strong> | 8<strong> × </strong>8 <strong>区域方块</strong></div>
+                        <hr class="b-border">
+                        <p class="map-desc">原神芙宁娜二创图片</p>
+                        <div class="map-meta">
+                            <div class="map-author">
+                                <span class="author-name">zxaBinbin</span>
+                            </div>
+                            <div class="map-date">2025-06-30</div>
                         </div>
-                        <a href="maplists/home" class="activity-btn">前往</a>
                     </div>
-                </div>
-            </div>
-
-            <!-- 分页 -->
-            <div class="activity-pagination">
-                <a class="page-btn disabled"><i class="fas fa-chevron-left"></i></a>
-                <a href="openplatform" class="page-btn active">1</a>
-                <a class="page-btn disabled"><i class="fas fa-chevron-right"></i></a>
+                </div>   
             </div>
         </div>
     </div>
+    <!-- 分页控件 -->
+            <div class="map-pagination">
+                <a class="page-btn disabled" style="text-decoration: none;"><i class="fas fa-chevron-left"></i></a>
+                <a href="#header" class="page-btn active disabled" style="text-decoration: none;">1</a>
+                <a class="page-btn disabled" style="text-decoration: none;">2</a>
+                <a class="page-btn disabled" style="text-decoration: none;">3</a>
+                <a class="page-btn disabled" style="text-decoration: none;">4</a>
+                <a class="page-btn disabled" style="text-decoration: none;"><i class="fas fa-ellipsis-h"></i></a>
+                <a class="page-btn disabled" style="text-decoration: none;">8</a>
+                <a class="page-btn disabled" style="text-decoration: none;"><i class="fas fa-chevron-right"></i></a>
+            </div>
+    </div>
+
     <br><br><br><br>
     <!-- 装饰元素 -->
     <div class="floating-element element-1"></div>
@@ -234,17 +233,18 @@
         </div>
     </footer>
     <!-- Scripts -->
-    <script src="static/js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
-    <script src="static/js/bootstrap.min.js"></script>
-    <script src="static/js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
-    <script src="static/js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
-    <script src="static/js/jquery.magnific-popup.min.js"></script> <!-- Magnific Popup for lightboxes -->
-    <script src="static/js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
-    <script src="static/js/scripts.js"></script> <!-- Custom scripts -->
-    <script src="static/js/activitieslist.js"></script>
-    <script src="static/js/click-effects.js"></script>
-    <script src="static/js/dl.js"></script>
-    <script src="static/js/bootstrap.bundle.min.js"></script>
+    <script src="../static/js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="../static/js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="../static/js/jquery.magnific-popup.min.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="../static/js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
+    <script src="../static/js/scripts.js"></script> <!-- Custom scripts -->
+    <script src="../static/js/activitieslist.js"></script>
+    <script src="../static/js/click-effects.js"></script>
+    <script src="../static/js/dl.js"></script>
+    <script src="../static/js/bootstrap.bundle.min.js"></script>
+    <script src="../static/js/map.js"></script>
 </body>
 
 </html>
