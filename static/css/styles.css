@@ -3059,3 +3059,216 @@ a:hover.back-to-top {
     50% { opacity: 0.5; }
     100% { opacity: 1; }
 }
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+#hero .hero-bg-swiper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+#hero .hero-bg {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+#hero .hero-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#hero .hero-content-swiper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+#hero .hero-content {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  gap: 60px;
+}
+
+#hero .album-cover {
+  width: 400px;
+  height: 400px;
+}
+
+#hero .album-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+#hero .album-info {
+  color: #fff;
+  max-width: 500px;
+  user-select: none;
+}
+
+#hero .album-info h2 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+#hero .album-info p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+#hero .btn-detail {
+  display: inline-block;
+  padding: 12px 30px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 0;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: 3px solid #fff;
+}
+
+#hero .btn-detail:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+#hero .swiper-button-next,
+#hero .swiper-button-prev {
+  color: #fff;
+}
+
+#hero .swiper-pagination-bullet {
+  background: #fff;
+  opacity: 0.5;
+  width: 20px;
+  height: 4px;
+  border-radius: 0px;
+  margin: 0 3px;
+  transition: 0.5s ease-in-out;
+}
+
+#hero .swiper-pagination-bullet-active {
+  opacity: 1;
+  width: 30px;
+  height: 4px;
+  border-radius: 0px;
+}
+
+@media (max-width: 991px) {
+  #hero .hero-content {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 15px;
+    gap: 40px;
+  }
+
+  #hero .album-cover {
+    width: 300px;
+    height: 300px;
+  }
+
+  #hero .album-info h2 {
+    font-size: 36px;
+  }
+
+  #hero .album-info p {
+    font-size: 16px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Portfolio Details
+--------------------------------------------------------------*/
+.portfolio-details {
+  padding-top: 40px;
+}
+
+.portfolio-details .portfolio-details-slider img {
+  width: 100%;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid #949494;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #949494;
+}
+
+.portfolio-details .portfolio-info {
+  padding: 30px;
+  box-shadow: 0px 0 30px rgba(102, 102, 102, 0.08);
+}
+
+.portfolio-details .portfolio-info h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.portfolio-details .portfolio-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+.portfolio-details .portfolio-info ul li + li {
+  margin-top: 10px;
+}
+
+.portfolio-details .portfolio-description {
+  padding-top: 30px;
+}
+
+.portfolio-details .portfolio-description h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.portfolio-details .portfolio-description p {
+  padding: 0;
+}
